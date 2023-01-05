@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En Construcción</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Kanit:wght@600&family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body { height: 100% }
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h3, p{
+    font-family: 'Heebo', sans-serif;
+    
+}
+
+#descript{
+    font-weight: 100;
+}
+
+#tit{
+    color: aliceblue;
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+nav{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: aliceblue;
+    font-weight: 700;
+    /* position: sticky;
+    top: 0; */
+}
+
+.margins{
+    margin: 0 30px;
+}
+
+.bg-main{
+    background: linear-gradient(30deg, #7b21fd, #4a1692);
+    /* background-color: #7b21fd; */
+}
+
+.h-100{
+    height: 100%;
+}
+
+.jumbo{
+    height: calc(100% - 70px) ;
+    display: flex;
+    align-items: center;
+}
+
+#left{
+    width: 50%;
+}
+
+#right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.img-cont{
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: 100% 160%;
+}
+
+#small{
+    position:fixed;
+    bottom: -25%;
+    width: 20%;
+}
+
+#big{
+    position: fixed;
+    bottom: -25%;
+    right: -6%;
+    animation: rotatebig 60s infinite linear;
+}
+
+@keyframes rotatebig {
+    from{
+        transform: rotate(1deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+.rotation{
+    animation: rotate 50s infinite linear;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+    </style>
+    <div class="bg-main h-100">
+        <nav class="margins ">
+            PAGEX
+        </nav>
+        <div class="jumbo margins ">
+            <div id="left">
+                <h1 id="tit">
+                    ALGO ASOMBROSO ESTA EN CAMINO...
+                </h1>
+            </div>
+            <div id="right">
+                <div class="img-cont">
+
+                    <img id="big" class="rotation" src="./settings.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
