@@ -6,17 +6,8 @@
 }
 
 html, body { height: 100% }
-
-body{
-    background-color: #f5f5f5;
-}
-
 h1{
     font-family: 'Roboto Condensed', sans-serif;
-}
-
-h2{
-    font-family: 'Heebo', sans-serif;
 }
 
 h3, p{
@@ -108,8 +99,7 @@ button:hover{
 }
 
 .services{
-    margin-top: 50px;
-    padding: 20px;
+    margin-top: -25px;
     display: flex;
     justify-content: center;
     gap: 2%;
@@ -129,6 +119,7 @@ button:hover{
     align-items: center;
     justify-content: center;
     gap: 10px;
+    box-shadow: 0 10px 4px 1px rgba(211, 211, 211, 0.76);
     border-radius: 10px;
 }
 
@@ -156,7 +147,7 @@ button:hover{
 }
 
 .facts{
-    margin-top: 50px;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
 }
@@ -171,6 +162,7 @@ button:hover{
     width: 91%;
     border-radius: 10px;
     padding: 48px;
+    box-shadow: 0 10px 4px 1px rgba(211, 211, 211, 0.76);
     z-index: 2;
 }
 
@@ -297,131 +289,4 @@ button:hover{
     font-weight: 600;
     position: relative;
     bottom: 1px;
-}
-
-.section-title{
-    margin-top: 150px;
-}
-
-.hidden{
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: all 1s;
-}
-
-.show{
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.card:nth-child(2){
-    transition-delay: 200ms;
-}
-
-.card:nth-child(3){
-    transition-delay: 400ms;
-}
-
-.card:nth-child(4){
-    transition-delay: 600ms;
-}
-
-.card-cont{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 5px;
-    width: 91%;
-    margin: 0 auto;
-    justify-items: center;
-    align-content: center;
-    padding: 20px 0;
-    margin-top: 50px;
-    background-color: #fff;
-    border-radius: 8px;
-}
-
-.tec-card{
-    display: grid;
-    align-content: center;
-    justify-items: center;
-    grid-template-rows: 150px 70px;
-}
-
-.img-tec{
-    height: 100%;
-    border-radius: 100%;
-    overflow: hidden;
-}
-
-.img-tec img{
-    height: 100%;
-}
-
-.tec-card h2{
-    align-self: center;
-}
-
-
-@media only screen and (max-width: 962px) {
-
-    .bg-main{
-        overflow: hidden;
-    }
-
-    .jumbo{
-        justify-content: center;
-    }
-
-    .img-cont{
-        width: 100%;
-    }
-
-    #right{
-        width: 47%;
-    }
-
-    #left{
-        width: 53%;
-    }
-}
-
-@media only screen and (max-width:831px){
-    .jumbo{
-        flex-direction: column;
-    }
-
-    #left{
-        width: 91%;
-    }
-
-    #right{
-        display: none;
-    }
-
-    .fact-box{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .box{
-        border-right: none;
-        border-bottom: 1px solid lightgray;
-        padding-bottom: 20px;
-    }
-
-    #none-brd{
-        border-bottom: none;
-    }
-
-    .services{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .card {
-        width: 91%;
-    }
 }

@@ -1,27 +1,13 @@
-let btn = document.querySelector('#pot');
-let spaceShip = document.querySelector('#lel');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('show');
 
+        } else {
+            entry.target.classList.remove('show');
+        }
+    })
+});
 
-const playing = () => {
-    spaceShip.classList.add('up');
-    spaceShip.src = './src/imagenes/nave.png';
-    console.log('lel')
-}
-
-const stoping = () => {
-    spaceShip.classList.remove('up');
-    spaceShip.src = './src/imagenes/nave-not.png';
-    console.log('lel')
-}
-
-btn.onmouseover = () => {
-    playing()
-}
-
-btn.onmouseout = () => {
-    stoping();
-}
-
-btn.onmousedown = () => {
-    playing();
-}
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
